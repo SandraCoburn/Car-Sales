@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
 
-import AddedFeature from './AddedFeature';
+import AddedFeature from "./AddedFeature";
 
 const AddedFeatures = props => {
   return (
@@ -18,5 +19,12 @@ const AddedFeatures = props => {
     </div>
   );
 };
+const mapStateToProps = state => {
+  return {
+    idOnProps: state.additionalFeatures.id,
+    nameOnProps: state.additionalFeatures.name,
+    priceOnProps: state.additionalFeatures.price
+  };
+};
 
-export default AddedFeatures;
+export default connect(mapStateToProps, {})(AddedFeatures);
