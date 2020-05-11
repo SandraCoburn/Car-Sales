@@ -19,8 +19,7 @@ const AdditionalFeature = props => {
 
 const mapStatetoProps = state => {
   return {
-    name: state.additionalFeatures.name,
-    price: state.additionalPrice
+    ...state
   };
 };
 

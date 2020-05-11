@@ -1,10 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const Total = state => {
+const Total = props => {
   return (
     <div className="content">
-      <h4>Total Amount: ${state.additionalPrice + state.car.price}</h4>
+      <h4>Total Amount: ${props.additionalPrice + props.car.price}</h4>
     </div>
   );
 };

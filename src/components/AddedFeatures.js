@@ -23,6 +23,9 @@ const AddedFeatures = props => {
 };
 const mapStateToProps = state => {
   return {
+    // id: state.additionalFeatures.id,
+    // name: state.additionalFeatures.name,
+    // price: state.additionalFeatures.price,
     features: state.car.features
   };
 };
